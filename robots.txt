@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://digitalgroundwork.github.io/g.patouris/sitemap.xml
