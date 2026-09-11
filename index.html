@@ -3,30 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>George Patouris — Forklift & Telehandler Hire, Limassol</title>
-<meta name="description" content="George Patouris — forklift and telehandler hire in Limassol. 17m reach Merlo forklift for lifts, moving, and construction site work, booked by the day, week, or job.">
+<title>Forklift & Telehandler Hire Limassol — G. Patouris</title>
+
+<!-- SEO: description & core discovery -->
+<!-- Currently live at GitHub Pages. If you ever buy gpatouris.com, don't run both at once —
+     redirect this old URL to the new one and update the 3 URLs below (canonical, og:url, JSON-LD url). -->
+<meta name="description" content="Forklift and telehandler hire in Limassol, Cyprus — G. Patouris. Merlo P40.17, 17m reach, owner-operated. Lifting, moving & construction site work, Monday–Saturday. Call 99 630 273.">
 <link rel="canonical" href="https://digitalgroundwork.github.io/g.patouris/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#181A16">
+
+<!-- Open Graph (Facebook, WhatsApp link previews, etc.) -->
 <meta property="og:type" content="business.business">
-<meta property="og:title" content="George Patouris — Forklift & Telehandler Hire, Limassol">
-<meta property="og:description" content="17m reach Merlo forklift for hire in Limassol — lifts, moving, and construction site work. Book by the day, week, or job.">
+<meta property="og:site_name" content="G. Patouris Lift">
+<meta property="og:title" content="Forklift & Telehandler Hire Limassol — G. Patouris">
+<meta property="og:description" content="Forklift and telehandler hire in Limassol, Cyprus. Merlo P40.17, 17m reach, owner-operated by George Patouris. Lifting, moving & construction site work.">
 <meta property="og:url" content="https://digitalgroundwork.github.io/g.patouris/">
-<meta property="og:image" content="https://digitalgroundwork.github.io/g.patouris/forklift-share.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="George Patouris — Forklift & Telehandler Hire, Limassol">
-<meta name="twitter:description" content="17m reach Merlo forklift for hire in Limassol — lifts, moving, and construction site work.">
-<meta name="twitter:image" content="https://digitalgroundwork.github.io/g.patouris/forklift-share.jpg">
+<meta property="og:locale" content="en_US">
+<!-- No og:image yet — add one once you have a photo hosted at a real URL (data-URI images don't work for link previews) -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Forklift & Telehandler Hire Limassol — G. Patouris">
+<meta name="twitter:description" content="Forklift and telehandler hire in Limassol, Cyprus. 17m reach, owner-operated. Lifting, moving & construction site work.">
+
+<!-- Structured data: tells Google this is a local business, not just a page -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "George Patouris - Forklift & Telehandler Hire",
-  "image": "https://digitalgroundwork.github.io/g.patouris/forklift-share.jpg",
+  "name": "G. Patouris — Forklift & Telehandler Hire",
+  "alternateName": "Patouris Lift",
   "telephone": "+35799630273",
+  "priceRange": "$$",
+  "description": "Forklift and telehandler hire in Limassol, Cyprus. Merlo P40.17 telehandler, 17m reach, owner-operated by George Patouris. Lifting, moving, and construction site work.",
+  "keywords": "forklift Limassol, telehandler Limassol, forklift hire Cyprus, telehandler hire Cyprus, Patouris, Merlo P40.17",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Limassol",
+    "addressCountry": "CY"
+  },
   "areaServed": "Limassol, Cyprus",
-  "description": "17m reach Merlo forklift and telehandler hire in Limassol for lifting, moving, and construction site work.",
-  "url": "https://digitalgroundwork.github.io/g.patouris/"
+  "url": "https://digitalgroundwork.github.io/g.patouris/",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehandler & Forklift Lifting Services" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Moving Services" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction Site Support" } }
+  ]
 }
 </script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -808,19 +838,40 @@
 
   footer{
     background:var(--charcoal);
-    padding:2.4rem 5%;
+    padding:2rem 5% 1.6rem;
+    border-top:1px solid rgba(154,157,147,.18);
+  }
+  .footer-row{
     display:flex;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
     gap:1rem;
-    border-top:1px solid rgba(154,157,147,.18);
   }
   footer p{
     font-family:'IBM Plex Mono',monospace;
     font-size:.78rem;
     color:var(--steel);
   }
+  .footer-copy{
+    margin-top:1.4rem;
+    padding-top:1.2rem;
+    border-top:1px solid rgba(154,157,147,.1);
+    font-size:.7rem !important;
+    color:rgba(154,157,147,.55) !important;
+    text-align:center;
+  }
+  .footer-credit{
+    margin-top:.5rem;
+    font-size:.7rem !important;
+    text-align:center;
+  }
+  .footer-credit a{
+    color:rgba(154,157,147,.55);
+    text-decoration:none;
+    transition:color .15s ease;
+  }
+  .footer-credit a:hover{color:var(--merlo-green);}
 
   @media (max-width:860px){
     .hero-grid{grid-template-columns:1fr;}
@@ -1085,8 +1136,12 @@
 </section>
 
 <footer>
-  <p>G. PATOURIS — MERLO TELEHANDLER HIRE</p>
-  <p>17M REACH · GREEN MERLO · OWNER-OPERATED</p>
+  <div class="footer-row">
+    <p>G. PATOURIS — MERLO TELEHANDLER HIRE</p>
+    <p>17M REACH · GREEN MERLO · OWNER-OPERATED</p>
+  </div>
+  <p class="footer-copy">&copy; 2026 G. Patouris. All rights reserved.</p>
+  <p class="footer-credit"><a href="https://digitalgroundwork.github.io/-/" target="_blank" rel="noopener">Powered by Groundwork Digital</a></p>
 </footer>
 
 <script>
