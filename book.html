@@ -341,13 +341,13 @@
 
 
   /* ===== BOOKING PAGE ===== */
-  .book-hero{position:relative;padding:9rem 5% 3.6rem;overflow:hidden;}
+  .book-hero{position:relative;padding:6.9rem 5% 1.4rem;overflow:hidden;}
   .book-hero::before{content:'';position:absolute;inset:0;pointer-events:none;
     background-image:linear-gradient(rgba(243,241,231,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(243,241,231,.035) 1px,transparent 1px);
     background-size:44px 44px;
     -webkit-mask-image:radial-gradient(ellipse at 72% 40%,#000 0%,transparent 70%);
     mask-image:radial-gradient(ellipse at 72% 40%,#000 0%,transparent 70%);}
-  .book-hero .section-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;}
+  .book-hero .section-inner{position:relative;}
   .hero-top{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;}
   .book-hero h1{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:clamp(2rem,4.2vw,3rem);line-height:1.05;margin:.9rem 0 1rem;}
   .book-hero p{color:var(--steel-light);font-size:1rem;line-height:1.6;max-width:38rem;}
@@ -355,22 +355,14 @@
   .live-dot{display:inline-block;flex:none;width:8px;height:8px;border-radius:50%;background:var(--merlo-green);animation:pulse 2s ease-out infinite;}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,181,24,.55)}70%{box-shadow:0 0 0 9px rgba(124,181,24,0)}100%{box-shadow:0 0 0 0 rgba(124,181,24,0)}}
 
-  .hz{position:absolute;left:0;right:0;bottom:0;height:6px;overflow:hidden;opacity:.9;}
+  .hz{position:absolute;left:0;right:0;top:4.6rem;height:14px;overflow:hidden;}
   .hz::before{content:'';position:absolute;top:0;bottom:0;left:0;right:-70px;
     background:repeating-linear-gradient(-45deg,#F2A900 0 12px,#181A16 12px 24px);
     animation:hzMove 2.4s linear infinite;}
   @keyframes hzMove{to{transform:translateX(-33.94px)}}
 
-  .hero-art{justify-self:end;width:100%;max-width:420px;}
-  .hero-art svg{width:100%;height:auto;display:block;}
-  .boom{transform-origin:64px 108px;animation:boomLift 7s ease-in-out infinite;}
-  .carriage{transform-origin:296px 50px;animation:carriageLevel 7s ease-in-out infinite;}
-  @keyframes boomLift{0%,100%{transform:rotate(3deg)}50%{transform:rotate(-10deg)}}
-  @keyframes carriageLevel{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(10deg)}}
-  .beacon{animation:beacon 1.4s steps(1) infinite;}
-  @keyframes beacon{0%{opacity:1}50%{opacity:.15}}
 
-  .booking-wizard{padding:2.6rem 5% 6rem;}
+  .booking-wizard{padding:1.6rem 5% 6rem;}
   #stepsBar.hidden{display:none;}
   .steps{list-style:none;display:flex;gap:.6rem;margin-bottom:1.1rem;flex-wrap:wrap;}
   .step{display:flex;align-items:center;gap:.6rem;padding:.65rem 1rem;border:1px solid rgba(243,241,231,.15);border-radius:2px;font-family:'Oswald',sans-serif;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--steel);flex:1;min-width:150px;transition:border-color .2s ease,color .2s ease;}
@@ -478,9 +470,17 @@
   .ref-code{font-family:'IBM Plex Mono',monospace;color:var(--amber);}
   .confirm-actions{display:flex;gap:1rem;justify-content:center;margin-top:1.8rem;flex-wrap:wrap;}
 
-  @media(max-width:820px){
-    .book-hero .section-inner{grid-template-columns:1fr;}
-    .hero-art{display:none;}
+  @media(max-width:480px){
+    header{padding:.8rem 4%;}
+    .header-actions{gap:.4rem;}
+    .icon-btn{width:40px;height:40px;}
+    .icon-btn svg{width:18px;height:18px;}
+    .call-btn{padding:.6rem .8rem;}
+    .call-btn .phone-text{display:none;}
+    .book-btn{padding:.6rem .9rem;font-size:.78rem;}
+    .logo{font-size:.88rem;}
+    .hz{top:4.1rem;}
+    .book-hero{padding-top:6.4rem;}
   }
   @media(max-width:640px){
     .field-grid{grid-template-columns:1fr;}
@@ -488,7 +488,7 @@
     #locateRow{flex-direction:column;}
   }
   @media(prefers-reduced-motion:reduce){
-    .boom,.carriage,.beacon,.live-dot,.hz::before,.gp-pin,.panel,.confirmation,.confirm-icon,.ps-dot{animation:none!important;}
+    .live-dot,.hz::before,.gp-pin,.panel,.confirmation,.confirm-icon,.ps-dot{animation:none!important;}
     .confirm-icon .tick{stroke-dashoffset:0;}
   }
 
@@ -519,37 +519,11 @@
   <div class="section-inner">
     <div>
       <div class="hero-top">
-        <div class="eyebrow reveal">Request a Booking</div>
+        <div class="eyebrow">Request a Booking</div>
         <span class="live-pill"><span class="live-dot"></span>Now booking &middot; Mon&ndash;Sat</span>
       </div>
-      <h1 class="reveal">Book the Telehandler</h1>
-      <p class="reveal">Pick a date and time, tell us about the job and where it is, and the operator will confirm your slot &mdash; no payment needed up front.</p>
-    </div>
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 360 200">
-        <ellipse cx="180" cy="184" rx="150" ry="7" fill="rgba(0,0,0,.35)"/>
-        <line x1="12" y1="181" x2="348" y2="181" stroke="#4A4C43" stroke-width="2" stroke-dasharray="6 8"/>
-        <rect x="48" y="120" width="236" height="36" rx="6" fill="#5C8A12" stroke="#7CB518" stroke-width="2"/>
-        <rect x="48" y="146" width="236" height="10" rx="3" fill="#22251F"/>
-        <path d="M176 120 V92 a6 6 0 0 1 6-6 H214 a6 6 0 0 1 5 3 L236 120 Z" fill="#22251F" stroke="#C9CBC2" stroke-width="2"/>
-        <path d="M184 116 V96 H212 L226 116 Z" fill="rgba(201,203,194,.22)"/>
-        <circle class="beacon" cx="200" cy="83" r="3.5" fill="#F2A900"/>
-        <circle cx="100" cy="158" r="22" fill="#181A16" stroke="#C9CBC2" stroke-width="3"/>
-        <circle cx="100" cy="158" r="8" fill="none" stroke="#F2A900" stroke-width="3"/>
-        <circle cx="236" cy="158" r="22" fill="#181A16" stroke="#C9CBC2" stroke-width="3"/>
-        <circle cx="236" cy="158" r="8" fill="none" stroke="#F2A900" stroke-width="3"/>
-        <g class="boom">
-          <line x1="64" y1="108" x2="192" y2="76" stroke="#5C8A12" stroke-width="14" stroke-linecap="round"/>
-          <line x1="192" y1="76" x2="296" y2="50" stroke="#7CB518" stroke-width="9" stroke-linecap="round"/>
-          <g class="carriage">
-            <line x1="296" y1="50" x2="296" y2="90" stroke="#C9CBC2" stroke-width="5" stroke-linecap="round"/>
-            <line x1="296" y1="90" x2="334" y2="90" stroke="#F2A900" stroke-width="5" stroke-linecap="round"/>
-            <rect x="304" y="66" width="24" height="20" fill="#4A4C43" stroke="#9A9D93" stroke-width="2"/>
-            <rect x="300" y="86" width="34" height="4" fill="#9A9D93"/>
-          </g>
-        </g>
-        <circle cx="64" cy="108" r="8" fill="#22251F" stroke="#F2A900" stroke-width="3"/>
-      </svg>
+      <h1>Book the Telehandler</h1>
+      <p>Pick a date and time, tell us about the job and where it is, and the operator will confirm your slot &mdash; no payment needed up front.</p>
     </div>
   </div>
   <div class="hz" aria-hidden="true"></div>
