@@ -699,9 +699,6 @@
     .call-btn{padding:.6rem .75rem;}
     .header-actions{gap:.4rem;}
   }
-  @media (max-width:600px){
-    .icon-btn.viber{display:none;}
-  }
   @media (max-width:560px){
     .logo{font-size:.9rem;}
     .book-btn{padding:.6rem .9rem; font-size:.78rem;}
@@ -746,6 +743,26 @@
   .lang-btn{gap:.4rem;}
   .lang-btn .flag{width:21px; height:14px; display:block; flex:none; border-radius:1px; box-shadow:0 0 0 1px rgba(243,241,231,.25);}
   @media (max-width:620px){ .lang-btn .lang-txt{display:none;} .lang-btn{min-width:32px; padding:0 .4rem;} }
+  /* ===== Mobile header (final) ===== */
+  @media (max-width:480px){
+    header{padding-left:10px; padding-right:10px;}
+    .logo{font-size:.8rem; gap:.2rem;}
+    .header-actions{gap:.28rem;}
+    .icon-btn{width:34px; height:34px;}
+    .icon-btn.viber{display:flex;}
+    .lang-btn{height:34px; min-width:34px; padding:0 .35rem;}
+    .call-btn{height:34px; padding:0 .5rem;}
+    .book-btn{font-size:.78rem; padding:.55rem .6rem;}
+  }
+  @media (min-width:420px) and (max-width:480px){
+    .logo{font-size:.92rem;}
+    .book-btn{font-size:.84rem; padding:.55rem .75rem;}
+    .icon-btn,.lang-btn,.call-btn{height:36px;} .icon-btn{width:36px;}
+  }
+  @media (max-width:385px){
+    .icon-btn.viber{display:none;}
+    .logo{font-size:.86rem;}
+  }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 </head>
