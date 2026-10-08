@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gpatouris.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gpatouris.com/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://gpatouris.com/index-gr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gpatouris.com/"/>
+    <lastmod>2026-10-08</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gpatouris.com/index-gr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gpatouris.com/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://gpatouris.com/index-gr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gpatouris.com/"/>
     <lastmod>2026-10-08</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://gpatouris.com/book.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gpatouris.com/book.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://gpatouris.com/book-gr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gpatouris.com/book.html"/>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gpatouris.com/book-gr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gpatouris.com/book.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://gpatouris.com/book-gr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gpatouris.com/book.html"/>
     <lastmod>2026-10-08</lastmod>
     <priority>0.8</priority>
   </url>
